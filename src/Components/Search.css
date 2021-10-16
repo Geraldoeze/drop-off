@@ -1,7 +1,17 @@
 .Search{
-    
+    background-color: gray;
     display: inline-block;
     width: 30%;
+    
+}
+
+.click {
+    display: inline-flex;
+ 
+}
 
 
+.submit{
+    margin: 5px;
+    cursor: pointer;
 }

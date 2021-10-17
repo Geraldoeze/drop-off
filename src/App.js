@@ -1,19 +1,24 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
-import SearchBar from './Components/Search';
+import Bar from './Components/Bar';
 import Map from './Components/Map';
 
-import "primereact/resources/themes/vela-blue/theme.css";
-import "primereact/resources/primereact.min.css";
-import "primeicons/primeicons.css";
 
-function App() {
-  return (
-    <div className="App">
-      <SearchBar />
-      <Map />
-    </div>
-  );
+
+class App extends Component {
+
+ 
+  render() {
+    return (
+       <div className="App">  
+         <Bar />
+         <Map />
+       </div>
+    )
+  }
 }
-
+ 
 export default App;
+
+
+

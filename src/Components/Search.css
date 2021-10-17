@@ -1,17 +1,32 @@
-.Search{
-    background-color: gray;
+.search {
+    background-color:skyblue;
+    width: 40%;
     display: inline-block;
+    height: 100vh;
+}
+
+h2{
+    text-align: center;
+}
+
+
+.label {
+    text-align:left;
+    display: block;
+    font-size: 30px;
+}
+/*
+.call {
+    display: block;
     width: 30%;
-    
+    border: 3px solid lightblue;
+    border-bottom: 3px solid lightblue;
+    padding: 10px 12vh;
 }
 
-.click {
-    display: inline-flex;
- 
-}
-
-
-.submit{
-    margin: 5px;
-    cursor: pointer;
-}
+.btn {
+    display: inline-block;
+    padding: 10px;
+    background: #494949;
+    color: white;
+} */

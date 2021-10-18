@@ -19,30 +19,39 @@ class Bar extends Component {
         e.preventDefault()
         console.log(this.state)
     }
+
+ 
     render(){
-        const { pickup, drop } =this.state
+            const {pickup, drop} = this.state
     return (  
         <div className="search">
-            <h2>Location</h2>
             <form onSubmit={this.submitHandler}>
                 <div>
-                    <label htmlFor="pick up" className="label"> Pick up</label>
+                    <label htmlFor="starting" className="label"> Starting location</label>
                     <input
                        type="text" 
                        className="call" 
                        name="origin"
                        value= {pickup} 
-                       onChange={this.changeHandler}/>
+                        onChange={this.changeHandler}
+                        />
                     </div>
                     <div>
-                    <label htmlFor="drop off" className="label">Drop off</label>
-                    <input type="text" className="call" name="destination" value= {drop} onChange={this.changeHandler}/>
+                    <label htmlFor="drop off" className="label">Drop-off point</label>
+                    <input type="text"
+                     className="call"
+                     value={drop}
+                      name="destination" 
+                       onChange={this.changeHandler}/>
                 </div>
+               { <div className="res">
+                    <p>Total distance:</p>
+                    <p>Total time:</p>
+                </div>}
                 <div>
-                    <button type="submit"  className="btn">Submit</button>
-                    <button type="reset"className="btn">Reset</button>
+                    <button type="submit"  className="btn" >Submit</button>
+                    <button type="reset"className="btn" >Reset</button>
                 </div>
-
             </form>
       
             

@@ -1,8 +1,9 @@
 .search {
-    background-color:skyblue;
-    width: 40%;
-    display: inline-block;
-    height: 100vh;
+    background-color:rgba(189, 130, 164, 0.651);
+    display: block;
+    text-align: center;
+    padding-top: 2px;
+
 }
 
 h2{
@@ -11,22 +12,23 @@ h2{
 
 
 .label {
-    text-align:left;
+    text-align:center;
     display: block;
-    font-size: 30px;
+    font-size: 20px;
+    padding: 12px;
 }
-/*
-.call {
-    display: block;
-    width: 30%;
-    border: 3px solid lightblue;
-    border-bottom: 3px solid lightblue;
-    padding: 10px 12vh;
+.call{
+    margin-bottom: 10px;
+    padding: 0.5vh;
+    
 }
 
 .btn {
     display: inline-block;
-    padding: 10px;
-    background: #494949;
-    color: white;
-} */
+    padding: 7px;
+    background: transparent;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+} 

@@ -12,16 +12,17 @@ class App extends React.Component {
     constructor(){
         super();
         
-      
+   
         this.state = {
             origin: '',
             destination: ''
         }
+        
     }
       pathHandler = (log) => {
-        late: log.map(num=> num[0]);
-         long: log.map(num=> num[1])
-      }
+         
+        }
+      
     
 
      newLocation = (item) =>{
@@ -30,7 +31,7 @@ class App extends React.Component {
          const repo =  item.data.status; 
          if(repo==="failure"){document.getElementById("kill").innerHTML = "Location not accessible by car";}
          else if(repo==="in progress"){document.getElementById("kill").innerHTML = "Loading in progress"}
-         else if(repo==="success"){document.getElementById("kill").innerHTML = "total distance: 2000"}
+         else if(repo==="success"){document.getElementById("kill").innerHTML = "total distance: 2000 total distance:1800"} 
          else {document.getElementById("kill").innerHTML = "Error Refresh to Load"}
      }
     
@@ -53,6 +54,7 @@ class App extends React.Component {
     
     }
     render() { 
+      const demo = this.pathHandler
      
         return (
         <div className="App">
@@ -60,8 +62,7 @@ class App extends React.Component {
                 onButtonSubmit={this.onSubmit}
                 />
                 
-                   <Map pathHandler ={this.pathHandler.long} 
-                      pathH = {this.pathHandler.late}
+                   <Map pathHandler ={demo }
                    />
                 
                 

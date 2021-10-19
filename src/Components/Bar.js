@@ -13,7 +13,7 @@ const Bar = ({ onInputChange, onButtonSubmit }) => {
                        className="call" 
                        name="origin"
                         onChange={onInputChange}
-                        
+                         
                         />
                     </div>
                     <div>
@@ -25,7 +25,7 @@ const Bar = ({ onInputChange, onButtonSubmit }) => {
                        />
                 </div>
                 <div id="kill" className="res">
-                    
+                    <p id="sell"></p>
                 </div>
                 <div>
                     <button type="submit"  

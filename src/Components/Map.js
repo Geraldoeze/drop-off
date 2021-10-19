@@ -6,9 +6,9 @@ import mapboxgl from 'mapbox-gl'
 
 mapboxgl.accessToken="pk.eyJ1IjoiZ2FsbGFudDcwMSIsImEiOiJja3V2d2Z1azYwMGpzMm5xd3MyODhxajE2In0.Kxtv3Cg8rlL_QZYJKfXMxg"
 
+//Was unable to pass the new data to the map component
 
-
-const Maps = ({ late, long }) => {
+const Maps = ( {demo} ) => {
     const mapContainerRef = useRef(null)
     
     const [lng, setLng]= useState( 7.398574);
@@ -25,10 +25,7 @@ const Maps = ({ late, long }) => {
             zoom: zoom // starting
         });
        
-        map.on('move',() => {
-            setLng([long])
-            setLat([late])
-        });
+        
          //Add navigation control (+/- buttons)
          map.addControl(new mapboxgl.NavigationControl(), "top-left");
 
@@ -39,11 +36,14 @@ const Maps = ({ late, long }) => {
         
     },[]);
         
-        
+    // const video = () => {
+    //     setLng(demo.map(num => num[0]))
+    //     setLat(demo.map(num => num[1]))
+    // }
         
     return (  
         <div>
-            <div className="mapps" ref={mapContainerRef} on>
+            <div className="mapps" ref={mapContainerRef} >
 
             </div>
 

@@ -4,7 +4,7 @@ import mapboxgl from 'mapbox-gl'
 
 
 
-mapboxgl.accessToken="pk.eyJ1IjoiZ2FsbGFudDcwMSIsImEiOiJja3V2d2Z1azYwMGpzMm5xd3MyODhxajE2In0.Kxtv3Cg8rlL_QZYJKfXMxg"
+mapboxgl.accessToken="" //Your API token from mapbox
 
 //Was unable to pass the new data to the map component
 

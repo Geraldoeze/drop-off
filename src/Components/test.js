@@ -1,10 +1,11 @@
-import './Search.css'
 
-const Bar = ({ onInputChange, onButtonSubmit }) => {
+
+
+const Test = ({ onInputChange, onButtonSubmit }) => {
                   
                  
     return ( 
-        <div className="search">
+        <div>
            <form >
                 <div>
                     <label htmlFor="starting" className="label"> Starting location</label>
@@ -24,15 +25,15 @@ const Bar = ({ onInputChange, onButtonSubmit }) => {
                       name="destination" 
                        />
                 </div>
-                <div id="kill" className="res">
-                    
-                </div>
+               { <div className="res">
+                    <p>Total distance:</p>
+                    <p>Total time:</p>
+                </div>}
                 <div>
                     <button type="submit"  
                         onClick={onButtonSubmit}
                         className="btn" >Submit</button>
-                    <button type="reset"
-                        className="btn" >Reset</button>
+                    <button type="reset"className="btn" >Reset</button>
                 </div>
             </form>
       
@@ -40,4 +41,4 @@ const Bar = ({ onInputChange, onButtonSubmit }) => {
      );
 }
  
-export default Bar;
+export default Test;

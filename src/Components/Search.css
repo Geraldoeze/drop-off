@@ -1,9 +1,8 @@
 .search {
-    background-color:rgba(189, 130, 164, 0.651);
+    background-color:rgb(79, 167, 207);
     display: block;
     text-align: center;
     padding-top: 2px;
-
 }
 
 h2{
@@ -14,21 +13,28 @@ h2{
 .label {
     text-align:center;
     display: block;
-    font-size: 20px;
-    padding: 12px;
+    margin-top: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
 }
-.call{
-    margin-bottom: 10px;
-    padding: 0.5vh;
-    
+.call {
+    margin: 13px;
 }
 
 .btn {
+    text-align: center;
     display: inline-block;
     padding: 7px;
+    margin: 18px;
     background: transparent;
-    color: black;
+    color: rgb(208, 219, 213);
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: darkslategrey;
 } 
+
+.res{
+    color: floralwhite;
+    font-size: 15px;
+}

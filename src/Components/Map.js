@@ -3,7 +3,6 @@ import './Map.css'
 import mapboxgl from 'mapbox-gl'
 
 
-
 mapboxgl.accessToken="" //Your API token from mapbox
 
 //Was unable to pass the new data to the map component
